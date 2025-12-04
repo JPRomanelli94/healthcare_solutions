@@ -49,9 +49,8 @@ docker run -d --name redis -p 6379:6379 redis
 
 ## Endpoints principales
 
----
-
 🧑‍⚕️ ### Pacientes
+
 ➤ Crear paciente
 
 POST /pacientes
