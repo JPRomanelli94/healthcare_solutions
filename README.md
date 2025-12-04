@@ -49,8 +49,9 @@ docker run -d --name redis -p 6379:6379 redis
 
 ## Endpoints principales
 
+---
 
-🧑‍⚕️ Pacientes
+🧑‍⚕️ ### Pacientes
 ➤ Crear paciente
 
 POST /pacientes
@@ -71,3 +72,25 @@ GET /pacientes
 ➤ Buscar por ID
 
 GET /pacientes/{id}
+
+---
+ ### Registros Médicos
+
+➤ Crear registro
+POST /registros
+
+Body:
+
+{
+  "id_registro": 10,
+  "id_paciente": 1,
+  "diagnostico": "Gripe estacional",
+  "tratamiento": "Reposo",
+  "medicacion": "Paracetamol"
+}
+
+➤ Obtener todos
+GET /registros
+
+➤ Obtener por ID
+GET /registros/{id}
