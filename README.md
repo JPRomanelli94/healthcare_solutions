@@ -45,11 +45,13 @@ Los datos se guardan en Redis utilizando hashes:
 docker pull redis
 docker run -d --name redis -p 6379:6379 redis
 
-Endpoints principales
+---
+
+## Endpoints principales
 
 🧑‍⚕️ Pacientes
-
 ➤ Crear paciente
+
 POST /pacientes
 
 Body
@@ -62,28 +64,9 @@ Body
 }
 
 ➤ Obtener todos
+
 GET /pacientes
 
-➤ Obtener por ID
+➤ Buscar por ID
+
 GET /pacientes/{id}
-
-📘 Registros Médicos
-
-➤ Crear registro
-POST /registros
-
-Body:
-
-{
-  "id_registro": 10,
-  "id_paciente": 1,
-  "diagnostico": "Gripe estacional",
-  "tratamiento": "Reposo",
-  "medicacion": "Paracetamol"
-}
-
-➤ Obtener todos
-GET /registros
-
-➤ Obtener por ID
-GET /registros/{id}
