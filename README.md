@@ -44,10 +44,10 @@ Los datos se guardan en Redis utilizando hashes:
 ```bash
 docker pull redis
 docker run -d --name redis -p 6379:6379 redis
-
+```
 ---
 
-## **Endpoints principales**
+## Endpoints principales
 
 
 🧑‍⚕️ Pacientes
